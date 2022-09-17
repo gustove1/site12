@@ -1,0 +1,300 @@
+
+/* &display=swap&subset=cyrillic-ext */
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900,&display=swap);
+/* обнуление стилей */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {list-style: none;
+}
+a,
+a:visited {text-decoration: none;
+}
+a:hover {text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body{
+	height: 100%;
+}
+html{
+font-size: 16px;
+}
+body{
+	line-height: 1;
+	font-family: "Roboto";
+	color: #4B4B4B;
+	background: #F5F5F5;
+	overflow-x: hidden;
+
+	
+}
+.wrapper{
+	min-height: 100%;
+
+}
+/* .............................................. */
+
+
+
+
+.block{
+	padding: 50px;
+	padding-top: 180px
+}
+
+.block__item{
+	padding: 40px;
+	color: #F5F5F5;
+	max-width: 500px;
+margin-bottom: -60px;	
+
+}
+
+.block__item_color-blue{
+	background-color: blue;
+	position: relative;
+	left: 150px;
+	bottom: 50px;
+}
+.block__item_color-chartreuse{
+	background-color: chartreuse;
+	position: relative;
+
+}
+
+.block__item_color-green{
+	background-color: rgb(172, 18, 126);
+
+
+}
+
+.block__image img{
+	background-color: rgb(17, 231, 160);
+	width: 600px;
+	height: 300px;
+	left: 400px;
+
+}
+
+
+.item{
+	position: absolute;
+	background-color: rgb(139, 0, 0);
+	left: 60px;
+	top: 120px;
+	font-size: 40px;
+}
+
+
+
+.block__image{
+	display: inline-block;
+	position: relative;
+	
+}
+
+
+.block__image::before{
+	content: "тест абсолют бефор 	z-index: 2	";
+	position: absolute;
+	width:100px;
+	height: 100px;
+	background-color: rgba(255, 217, 4, 0.932);
+	z-index: 2;
+}
+
+
+
+
+ .block__image::after{
+	content: "тест абсолют афтер z-index: 1";
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 60px;
+	top: 60px;
+	z-index: 1;
+background-color: chartreuse;
+ }
+
+
+ .some-block{
+	background-color: darkslateblue;
+	color: #F5F5F5;
+	font-size: 20px;
+	padding: 30px;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+ }
+
+ .zapisnay-kniga {
+	display: inline-block;
+	padding: 70px;
+color: #F5F5F5;
+font-size: 80px;
+
+}
+
+.zapisnay-kniga2 {
+	display: inline-block;
+	padding: 70px;
+color: #0a0a0a;
+font-size: 80px;
+
+}
+
+
+
+
+.zapisnay-kniga__bukva-a {
+	background-color: crimson;
+	position: sticky;
+	top: 100px;
+	left: 0px;
+	z-index: 1;
+}
+.zapisnay-kniga__paragraf {
+background-color: rgba(211, 248, 2, 0.438);
+font-size: 40px;
+padding: 5px;
+position: sticky;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+.zapisnay-kniga__bukva-b {
+	background-color: rgb(21, 221, 48);
+	position: sticky;
+	top: 100px;
+	left: 0px;
+	z-index: 1;
+
+}
+
+
+.zapisnay-kniga__bukva-c {
+	background-color: rgb(235, 10, 197);
+	position: sticky;
+	top: 100px;
+	left: 0px;
+	z-index: 1;
+}
+
+.list {
+	display: inline-block;
+	padding: 80px;
+	border: 1px solid #000;
+}
+.list__item {
+	
+	font-size: 20px;
+	color: rgb(28, 114, 11);
+	background-color: rgb(254, 255, 255);
+	max-width: 800px;
+	position: relative;
+	margin-bottom: 10px;
+	
+}
+
+.list_margin{
+	margin: 40px;
+}
+
+.list__item::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-color: rgb(151, 9, 44);
+	border-radius: 30%;
+	left: -40px;
+	top: 0px;
+}
+
+
+.who-we-are {
+	max-width: 1020px;
+	padding: 100px 87px 0px 87px;
+	background: #5D62B5;
+border-radius: 40px;
+position: relative;
+
+}
+.who-we-are__title {
+font-size: 12px;
+line-height: 2;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+color: #F5F5F5;
+margin-bottom: 33px;
+max-width: 436px;
+}
+.who-we-are__sub-title {
+font-size: 36px;
+line-height: 1.17;
+color: #FFFFFF;
+max-width: 583px;
+margin-bottom: 36px;
+
+}
+.who-we-are__text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: #F5F5F5;
+max-width: 846px;
+margin-bottom: 54px;
+}
+.who-we-are__image {	
+	margin-bottom: 54px;
+
+
+}
+.who-we-are__img {
+	border-radius: 40px;
+	margin-bottom: -120px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+	
+}
+
+.who-we-are_margin{
+	margin: 0 auto;
+} 
+
+
+.who-we-are__title::before{
+	display: inline-block;
+	content: "";
+	background: url("../img/Overline\ Mark.svg") 0 0 no-repeat;
+	height: 19px;
+width: 33px;
+}
+
+.who-we-are__decorate{
+	position: absolute;
+	left: 88%;
+	bottom: 70%;
+}
